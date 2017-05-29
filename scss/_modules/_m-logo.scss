@@ -1,0 +1,18 @@
+/* Logo */
+
+.logo { float: left; top: -0.5em; position: absolute; }
+.logo__image { height: 75px; margin-left: 1em; }
+.logo__arrow { visibility: hidden; }
+
+/* Mobile View */
+
+@media screen and (max-width: 720px) {
+  .logo { float: left; top: -0.5em; }
+
+  .logo { background-color: #ffffff; width: 100%; float: none; position: absolute; z-index: 99; }
+  .logo__arrow { position: absolute; transition: 0.5s ease-in-out; visibility:
+  visible; }
+  .fa-angle-down { top: 30px; }
+  .logo__arrow-open { height: 15px; transform: rotate(180deg); transition: 0.5s ease-in-out; }
+
+}
