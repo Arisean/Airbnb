@@ -1,12 +1,12 @@
-.searchbar { position: relative; width: 1500px; max-width: 100%; text-align: center; top: 3em; left: -1.5em; height: 30px; display: table-cell; vertical-align: middle; box-sizing: border-box; padding: 10px 24px; }
+.searchbar { position: relative; width: 1500; max-width: 100%; text-align: center; top: 3em; left: -1.5em; height: 30; display: table-cell; vertical-align: middle; box-sizing: border-box; padding: 10px 24px; }
 .searchbar__mobile-button { display: none; }
-.searchbar__anywhere {  width: 32%; height: 55px; background: #ffffff; border: 1px solid #e4e4e4; border-radius: 4px 0px 0px 4px; cursor: pointer; display: inline; text-align: left; padding: 11px 12px; position: relative; left: 1em; white-space: nowrap; font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif; font-size: 16px; line-height: 19px; color: #484848; box-shadow: 0px 1px #e4e4e4; }
-.searchbar__anytime {  width: 33%; height: 55px; background: #ffffff; border: 1px solid #e4e4e4; border-right: none; cursor: pointer; display: inline; text-align: left; padding: 11px 12px; position: relative; white-space: nowrap; font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif; font-size: 16px; line-height: 19px; color: #484848; box-shadow: 0px 1px #e4e4e4; }
-.searchbar__guest {  width:33%; height: 55px; background: #ffffff; border: 1px solid #e4e4e4; border-radius: 0px 4px 4px 0; cursor: pointer; display: inline; text-align: left; right: 1em; padding: 11px 12px; position: relative; white-space: nowrap; font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif; font-size: 14px; line-height: 19px; color: #484848; box-shadow: 0px 1px #e4e4e4; }
+.searchbar__anywhere {  width: 32%; height: 55px; background: #ffffff; border: 1px solid #e4e4e4; border-radius: 4px 0 0 4px; cursor: pointer; display: inline; text-align: left; padding: 11px 12px; position: relative; left: 1em; white-space: nowrap; font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif; font-size: 16px; line-height: 19px; color: #484848; box-shadow: 0px 1px #e4e4e4; }
+.searchbar__anytime {  width: 33%; height: 55px; background: #ffffff; border: 1px solid #e4e4e4; border-right: none; cursor: pointer; display: inline; text-align: left; padding: 11px 12px; position: relative; white-space: nowrap; font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif; font-size: 16px; line-height: 19px; color: #484848; box-shadow: 0 1px #e4e4e4; }
+.searchbar__guest {  width:33%; height: 55px; background: #ffffff; border: 1px solid #e4e4e4; border-radius: 0 4px 4px 0; cursor: pointer; display: inline; text-align: left; right: 1em; padding: 11px 12px; position: relative; white-space: nowrap; font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif; font-size: 14px; line-height: 19px; color: #484848; box-shadow: 0 1px #e4e4e4; }
 .searchbar__button { display: none; }
-.anywhere-icon { padding: 0px 7px; }
-.anytime-icon { padding: 0px 7px; }
-.guest-icon { padding: 0px 7px; }
+.anywhere-icon { padding: 0 7px; }
+.anytime-icon { padding: 0 7px; }
+.guest-icon { padding: 0 7px; }
 .dropdown-icon { display: none; visibility: hidden; }
 .searchbar__label-anywhere { display: none; }
 .searchbar__label-anytime { display: none; }
@@ -15,8 +15,8 @@
 /* Mobile View */
 @media screen and (max-width: 742px) {
 
-  .searchbar { position: relative; width: 1028px; max-width: 100%; text-align: center; top: 5em ; height: 20px; display: table-cell; vertical-align: middle; box-sizing: border-box; padding: 10px 24px; }
-  .searchbar__mobile-button { left: 1em; width: 100%; height: 45px; background: #ffffff; border: 1px solid #e4e4e4; border-radius: 4px; cursor: pointer; display: inline-block; text-align: left; padding: 11px 12px; position: relative; white-space: nowrap; font-size: 19px; line-height: 24px; color: #484848; font-smoothing: antialiased; overflow: hidden; text-overflow: ellipsis; outline: none; box-shadow: 0px 1px #e4e4e4; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+  .searchbar { position: relative; width: 1028px; max-width: 100%; text-align: center; top: 5em ; height: 20; display: table-cell; vertical-align: middle; box-sizing: border-box; padding: 10 24px; }
+  .searchbar__mobile-button { left: 1em; width: 100%; height: 45px; background: #ffffff; border: 1px solid #e4e4e4; border-radius: 4px; cursor: pointer; display: inline-block; text-align: left; padding: 11px 12px; position: relative; white-space: nowrap; font-size: 19px; line-height: 24px; color: #484848; font-smoothing: antialiased; overflow: hidden; text-overflow: ellipsis; outline: none; box-shadow: 0 1px #e4e4e4; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
 Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
   .searchbar__anytime { display: none; }
   .searchbar__anywhere { display: none;  }
@@ -26,25 +26,25 @@ Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 }
 
 /* Large Screen View */
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 1020) {
 
-  .searchbar { position: relative; width: 1500px; max-width: 100%; text-align: center; top: 3em; left: -1.5em; height: 30px; display: table-cell; vertical-align: middle; box-sizing: border-box; padding: 10px 24px; }
+  .searchbar { position: relative; width: 1500; max-width: 100%; text-align: center; top: 3em; left: -1.5em; height: 30; display: table-cell; vertical-align: middle; box-sizing: border-box; padding: 10px 24px; }
   .searchbar__mobile-button { display: none; }
-  .searchbar__anywhere {  width: 32%; height: 85px; background: #ffffff; border: 1px solid #e4e4e4; border-radius: 4px 0px 0px 4px; cursor: pointer; display: inline; text-align: left; padding: 11px 12px; position: relative; left: 1em; white-space: nowrap; font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif; font-size: 15px; line-height: 18px; color: #484848; }
+  .searchbar__anywhere {  width: 32%; height: 85px; background: #ffffff; border: 1px solid #e4e4e4; border-radius: 4px 0 0 4px; cursor: pointer; display: inline; text-align: left; padding: 11px 12px; position: relative; left: 1em; white-space: nowrap; font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif; font-size: 15px; line-height: 18px; color: #484848; }
   .searchbar__anytime {  width: 33%; height: 85px; background: #ffffff; border: 1px solid #e4e4e4; border-right: none; cursor: pointer; display: inline; text-align: left; padding: 11px 12px; position: relative; white-space: nowrap; font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif; font-size: 15px; line-height: 18px; color: #484848; }
-  .searchbar__guest {  width:33%; height: 85px; background: #ffffff; border: 1px solid #e4e4e4; border-radius: 0px 4px 4px 0; cursor: pointer; display: inline; text-align: left; right: 1em; padding: 11px 12px; position: relative; white-space: nowrap; font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif; font-size: 15px; line-height: 18px; color: #484848; }
+  .searchbar__guest {  width:33%; height: 85px; background: #ffffff; border: 1px solid #e4e4e4; border-radius: 0 4px 4px 0; cursor: pointer; display: inline; text-align: left; right: 1em; padding: 11px 12px; position: relative; white-space: nowrap; font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif; font-size: 15px; line-height: 18px; color: #484848; }
   .searchbar__button {
     font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
     font-size: 19px;
     line-height: 15px;
     letter-spacing: undefined;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
     color: #ffffff;
     padding-left: 18px;
     padding-right: 18px;
     border-radius: 4px;
-    border: 0px;
+    border: 0;
     background: #FF5A5F;
     margin: 12px;
     margin-left: 16px;

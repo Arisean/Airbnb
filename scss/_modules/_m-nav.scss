@@ -2,7 +2,7 @@
 
 .navagation { float: right; }
 .nav__order { float: right; }
-.nav__item { display: inline-block; top: 2em; padding-left: 10px; margin-right:
+.nav__item { display: inline-block; top: 2em; padding-left: 10; margin-right:
 1em; }
 .nav__link { height: 64px; font-size: 14px; color: #484848;
 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
@@ -13,7 +13,7 @@ text-decoration: none; line-height: 1.3em; }
 
 /* Mobile View */
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 720) {
   .navigation { }
   .nav__order { float: left; margin-left: -1.2em; width: 100%; }
   .nav__item { position: absolute; overflow: hidden; float: none; top: -100em;
