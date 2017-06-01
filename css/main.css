@@ -88,6 +88,10 @@ a {
 
 /* Mobile View */
 @media screen and (max-width: 720) {
+  .header-wrapper {
+    background-color: red; }
+  .header-wrapper:after {
+    clear: both; }
   .nav__order {
     float: left;
     margin-left: -1.2em;

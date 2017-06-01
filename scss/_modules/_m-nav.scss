@@ -15,6 +15,8 @@ text-decoration: none; line-height: 1.3em; }
 
 @media screen and (max-width: 720) {
   .navigation { }
+  .header-wrapper { background-color: red; }
+  .header-wrapper:after { clear: both; }
   .nav__order { float: left; margin-left: -1.2em; width: 100%; }
   .nav__item { position: absolute; overflow: hidden; float: none; top: -100em;
     transition: 0.8s ease-in-out; display:
