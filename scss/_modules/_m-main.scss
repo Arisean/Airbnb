@@ -1,0 +1,9 @@
+/* Main Wrapper */
+
+.main-wrapper { width: 100%; margin: 0; overflow: auto; height: 1848px; }
+
+/* Mobile View */
+
+@media screen and (max-width: 1040px) {
+  .main-wrapper { width: 100%; margin: 0; overflow: auto; height: 1848px; }
+}
