@@ -504,6 +504,11 @@ header {
   .searchbar__label-guest:after {
     clear: both; } }
 
+/*=======================
+
+        Submenu
+
+========================*/
 .submenu-wrapper {
   position: relative;
   overflow: auto;
@@ -565,6 +570,29 @@ header {
 .submenu__link:active {
   color: #008489;
   border-bottom: 2px solid #008489; }
+
+/*=======================
+
+        Article
+
+=======================*/
+.article-wrapper {
+  position: relative;
+  width: 95%;
+  margin: 48px 0;
+  height: auto;
+  padding: 0 18px; }
+
+.article__header {
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #484848;
+  font-weight: 600;
+  margin-bottom: 24px; }
 
 /*===========================
 
