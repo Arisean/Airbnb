@@ -8,4 +8,49 @@
   padding-bottom: 0px;
   color: #484848;
   font-weight: 600;
-  margin-bottom: 24px; }
+  margin: 48px 0 24px 0; }
+.article__image-wrapper { position: relative; }
+.article__slider-wrapper { margin: 0 -24px 0 -24px; overflow-y: hidden; }
+.article__slider { transition: 0.5s; white-space: nowrap; overflow-x: auto; overflow-y:hidden; padding: 0 18px; margin-bottom: -30px; width: 50%; height: 50%; overflow: visible; }
+.article__slider-image { padding: 0 6px 30px 6px; display: inline-block; vertical-align: top; white-space: normal; width: 50%; }
+.slide-image { width: 100%; height: 100%; }
+.article__image-title-span {
+  font-weight: 700;
+    color: #484848;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    margin: 0px;
+    word-wrap: break-word;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: inline;
+  }
+.article__image-title-inline {
+  display: inline;
+  font-weight: 300;
+  color: #484848;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+  margin: 0px;
+  word-wrap: break-word;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: inline; }
+.article__star-rating { display: inline-block; color: #00A699; font-size: 14px; height: 12px; margin-right: 3px; width: 12px; }
+.article__star-review {
+  font-weight: normal;
+  color: #484848;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+  margin: 0px;
+  word-wrap: break-word;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  display: inline;
+  position: relative;
+  right: -5em;
+}
