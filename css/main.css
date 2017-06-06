@@ -220,7 +220,7 @@ header {
 .searchbar-wrapper {
   width: 98%;
   overflow: auto;
-  height: 50px;
+  height: 75px;
   margin: 0;
   position: relative;
   top: 1.5em; }
