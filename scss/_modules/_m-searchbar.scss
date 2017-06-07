@@ -13,9 +13,9 @@
 .searchbar__label-guest { display: none; }
 
 /* Mobile View */
-@media screen and (max-width: 742px) {
-  .searchbar-wrapper { width: 97%; overflow: auto; margin: 0; position: relative; }
-  .searchbar__mobile-button { left: 1em; height: 45px; background: #ffffff; border: 1px solid #e4e4e4; border-radius: 4px; cursor: pointer; text-align: left; padding: 11px 12px; position: relative; white-space: nowrap; font-size: 19px; line-height: 24px; color: #484848; overflow: hidden; display: block; width: 96%; text-overflow: ellipsis; outline: none; box-shadow: 0 1px #e4e4e4; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+@media screen and (min-width: 320px) and (max-width: 742px){
+  .searchbar-wrapper { width: 98%; margin: 0; height: 45px; }
+  .searchbar__mobile-button { left: 1em; height: 45px; background: #ffffff; border: 1px solid #e4e4e4; border-radius: 4px; cursor: pointer; text-align: left; padding: 11px 12px; position: relative; white-space: nowrap; font-size: 19px; line-height: 24px; color: #484848; overflow: hidden; display: block; width: 93%; text-overflow: ellipsis; outline: none; box-shadow: 0 1px #e4e4e4; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
 Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
   .searchbar__anytime { display: none; }
   .searchbar__anywhere { display: none;  }
@@ -25,8 +25,8 @@ Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 }
 
 /* Large Screen View */
-@media screen and (min-width: 1020) {
-
+@media screen and (min-width: 1020px) {
+  .searchbar-wrapper { width: 98%; margin: 0; height: 90px; }
   .searchbar { position: relative; text-align: center; top: 3em; left: -1.5em; height: 30; display: table-cell; vertical-align: middle; box-sizing: border-box; padding: 10px 24px; }
   .searchbar__mobile-button { display: none; }
   .searchbar__anywhere {  width: 32%; height: 85px; background: #ffffff; border: 1px solid #e4e4e4; border-radius: 4px 0 0 4px; cursor: pointer; display: inline; text-align: left; padding: 11px 12px; position: relative; left: 1em; white-space: nowrap; font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif; font-size: 15px; line-height: 18px; color: #484848; }

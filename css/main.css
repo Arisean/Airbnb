@@ -310,12 +310,11 @@ header {
   display: none; }
 
 /* Mobile View */
-@media screen and (max-width: 742px) {
+@media screen and (min-width: 320px) and (max-width: 742px) {
   .searchbar-wrapper {
-    width: 97%;
-    overflow: auto;
+    width: 98%;
     margin: 0;
-    position: relative; }
+    height: 45px; }
   .searchbar__mobile-button {
     left: 1em;
     height: 45px;
@@ -332,7 +331,7 @@ header {
     color: #484848;
     overflow: hidden;
     display: block;
-    width: 96%;
+    width: 93%;
     text-overflow: ellipsis;
     outline: none;
     box-shadow: 0 1px #e4e4e4;
@@ -350,7 +349,11 @@ header {
     visibility: hidden; } }
 
 /* Large Screen View */
-@media screen and (min-width: 1020) {
+@media screen and (min-width: 1020px) {
+  .searchbar-wrapper {
+    width: 98%;
+    margin: 0;
+    height: 90px; }
   .searchbar {
     position: relative;
     text-align: center;
