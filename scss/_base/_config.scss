@@ -1,5 +1,12 @@
 /* Base Config */
+@font-face { font-family: Circular;
+  src: url('../fonts/CircularStd-Book.woff');
+  src: url('../fonts/CircularStd-Book.woff') format(Circular);
 
-* { }
+}
+* {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
 
 a { color: #000000; }

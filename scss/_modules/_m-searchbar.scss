@@ -8,23 +8,6 @@
     padding: 32px 0 8px 0;
 
     &::before { content: ""; display: table; }
-    &::before {
-      font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
-      font-size: 19px;
-      line-height: 24px;
-      letter-spacing: undefined;
-      padding-top: 0px;
-      padding-bottom: 0px;
-      color: #484848;
-      border-radius: 4px;
-      border: 1px solid #DBDBDB;
-      box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.08);
-      padding: 0px;
-      display: table;
-      table-layout: fixed;
-      width: 100%;
-      position: relative; }
-
     &::after { content: ""; display: table; clear: both; }
     }
   &__mobile-button {
@@ -34,11 +17,11 @@
     letter-spacing: 0.2px;
     color: #484848;
     background: #ffffff;
-    border: 1px solid #DBDBDB;
-    box-shadow: 0 1px 3px 0px rgba(0,0,0,0.8);
+    border: 0;
+    box-shadow: 0 1px 5px -1px;
     border-radius: 4px;
     cursor: pointer;
-    display: table;
+    display: inline;
     table-layout: fixed;
     text-align: left;
     padding: 11px 12px;
@@ -48,6 +31,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     outline: none;
+    appearance: button;
 
     &-icon {
       color: #767676;
