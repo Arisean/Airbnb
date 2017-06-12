@@ -1,12 +1,47 @@
 /* Logo */
 
-.logo__image { height: 75px; margin-left: 1em; position: relative; top: -1em; z-index: 25; background: #ffffff; }
-.logo__arrow { position: relative; top: -3em; visibility: hidden; background: #ffffff; z-index: 30; }
+.logo {
 
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: table-cell;
+  height: 64px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+
+  &__image {
+    height: 75px;
+    margin-left: 1em;
+    position: relative;
+    top: -1em;
+    z-index: 25;
+    background: #ffffff; }
+
+  &__arrow {
+    position: relative;
+    top: -3.32em;
+    visibility: hidden;
+    background: #ffffff;
+    z-index: 30;
+    height: 9px; }
+
+}
 /* Mobile View */
 
 @media screen and (max-width: 1024px) {
-  .logo__arrow { visibility: visible; transition: 0.5s ease-in-out; }
-  .logo__arrow-open { height: 15px; transform: rotate(180deg); transition: 0.5s ease-in-out; }
 
+  .logo {
+
+    &__arrow {
+      visibility: visible;
+      transition: 0.5s ease-in-out; }
+
+    &__arrow-open {
+      height: 15px;
+      transform: rotate(180deg);
+      transition: 0.5s ease-in-out; }
+  }
 }
