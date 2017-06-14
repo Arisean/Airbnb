@@ -30,6 +30,8 @@
 @media screen and (min-width: 744px) {
   .tagline {
     padding-top: 48px;
+    position: relative;
+    top: -1em;
   }
 }
 @media screen and (max-width: 743px) {
