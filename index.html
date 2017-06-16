@@ -24,7 +24,7 @@
               <li class="nav__item"><a class="nav__link"href="#">Sign Up</a></li>
               <li class="nav__item"><a class="nav__link"href="#">Log In</a><hr></li>
           </ul>
-        </nav>
+        </nav> <!--End of Fixed Navbar !-->
     </div>
   </header> <!--End of Header !-->
 
@@ -43,7 +43,60 @@
       <div class="search__search-bar">
         <button class="search__mobile-button"><span class="search__mobile-button-icon"><i class="fa fa-search searchbar__mobile-button-icon"><span class="search__mobile-button-text">Anywhere • Anytime • 1 guest</span></i></span>
         </button>
-        <div class="search__mobile-button-underline"></div>
+        <div class="search__anywhere">
+          <button class="search__anywhere-button">
+            <span class="search__anywhere-buttonIcon fa fa-search"></span>
+            <span class="search__anywhere-buttonText">Anywhere</span>
+          </button>
+        </div>
+        <div class="search__anytime">
+          <button class="search__anytime-button">
+            <span class="search__anytime-buttonIcon fa fa-calendar"></span>
+            <span class="search__anytime-buttonText">Anytime</span>
+          </button>
+        </div>
+        <div class="search__guest">
+          <button class="search__guest-button">
+            <span class="search__guest-buttonIcon fa fa-user"></span>
+            <span class="search__guest-buttonText">1 guest</span>
+          </button>
+        </div>
+        <div class="search__boxForm">
+          <div class="search__boxFormLabel">
+            <span class="search__boxFormLabelText">Where</span>
+          </div>
+          <div class="search__boxFormButton">
+            <div class="search__boxFormButtonBox">
+              <input class="search__boxFormButtonText" placeholder="Anywhere">
+            </div>
+          </div>
+        </div> <!--End of Form Box !-->
+
+        <div class="search__boxCalendar">
+          <div class="search__boxCalendarLabel">
+            <span class="search__boxCalendarLabelText">When</span>
+          </div>
+          <div class="search__boxCalendarButton">
+            <button class="search__boxCalendarButtonBox">
+              <span class="search__boxCalendarButtonText">Anytime</span>
+            </button>
+          </div>
+        </div> <!--End of Calendar Box !-->
+
+        <div class="search__boxDropDownMenu">
+          <div class="search__boxDropDownMenuLabel">
+            <span class="search__boxDropDownMenuLabelText">Guests</span>
+          </div>
+          <div class="search__boxDropDownMenuButton">
+            <button class="search__boxDropDownMenuButtonBox">
+              <span class="search__boxDropDownMenuButtonText">1 guest</span>
+            </button>
+            <span class="search__boxDropDownMenuButtonArrow fa fa-angle-down"></span>
+            <button class="search__boxDropDownMenuButtonSearch">
+              <span class="search__boxDropDownMenuButtonSearchText">Search</span>
+            </button>
+          </div>
+        </div> <!--End of Drop Down Menu Box !-->
       </div>
     </div> <!--End of Search !-->
 

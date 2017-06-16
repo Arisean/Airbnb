@@ -208,7 +208,8 @@ header {
 .search {
   background-color: transparent;
   padding: 0 24px;
-  max-width: 1080px; }
+  max-width: 1080px;
+  /* Remove button for medium and large screens */ }
   .search__search-bar {
     display: block;
     padding: 32px 0 8px 0; }
@@ -219,21 +220,27 @@ header {
       content: "";
       display: table;
       clear: both; }
+  .search__anywhere, .search__anytime, .search__guest {
+    display: none; }
+  .search__boxForm, .search__boxCalendar, .search__boxDropDownMenu {
+    display: none; }
   .search__mobile-button {
     font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
-    font-size: 19px;
+    font-size: 15px;
     line-height: 24px;
     letter-spacing: 0.2px;
     color: #484848;
+    border-collapse: collapse;
+    border-style: solid;
+    border-width: 0.5px;
     background: #ffffff;
-    border: 0;
-    box-shadow: 0 1px 5px -1px;
+    box-shadow: 0 1px 5px -2px;
     border-radius: 4px;
     cursor: pointer;
     display: inline;
     table-layout: fixed;
     text-align: left;
-    padding: 11px 12px;
+    padding: 9px 12px;
     position: relative;
     width: 100%;
     white-space: nowrap;
@@ -260,6 +267,139 @@ header {
       opacity: 0;
       z-index: 1; }
 
+/* Medium size screens */
+@media screen and (min-width: 744px) {
+  .search {
+    background-color: transparent;
+    padding: 0 24px;
+    max-width: 1080px;
+    /* Remove mobile button for small screens */
+    /* Button border-radius for medium screens */
+    /* Button style for medium screens */ }
+    .search__search-bar {
+      display: table;
+      padding: 32px 0 8px 0; }
+      .search__search-bar::before {
+        content: "";
+        display: table; }
+      .search__search-bar::after {
+        content: "";
+        display: table;
+        clear: both; }
+    .search__mobile-button {
+      display: none; }
+    .search__anywhere-button {
+      border-radius: 4px 0 0 4px; }
+    .search__anytime-button {
+      border-right: 0;
+      border-left: 0; }
+    .search__guest-button {
+      border-radius: 0 4px 4px 0; }
+    .search__anywhere, .search__anytime, .search__guest {
+      border-radius: 4px;
+      display: table-cell;
+      width: 360px; }
+      .search__anywhere-button, .search__anytime-button, .search__guest-button {
+        font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+        font-size: 17px;
+        font-weight: 100;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #484848;
+        background: #ffffff;
+        border-collapse: collapse;
+        border-width: 0.5px;
+        border-color: #DBDBDB;
+        border-style: solid;
+        box-shadow: 0;
+        cursor: pointer;
+        display: inline;
+        table-layout: fixed;
+        text-align: left;
+        padding: 16px;
+        position: relative;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        outline: none;
+        appearance: button; }
+        .search__anywhere-buttonIcon, .search__anytime-buttonIcon, .search__guest-buttonIcon {
+          color: #767676;
+          display: inline-block;
+          font-weight: 100;
+          font-size: 12px;
+          vertical-align: middle; }
+        .search__anywhere-buttonText, .search__anytime-buttonText, .search__guest-buttonText {
+          color: #484848;
+          margin-left: 12px;
+          vertical-align: middle; } }
+
+/* Large Screens */
+@media screen and (min-width: 1025px) {
+  .search {
+    background-color: transparent;
+    padding: 0 24px;
+    max-width: 1080px;
+    /* Remove button for small and medium screens */
+    /* Button border-radius for medium screens */ }
+    .search__mobile-button {
+      display: none; }
+    .search__anywhere, .search__anytime, .search__guest {
+      display: none; }
+    .search__search-bar {
+      display: block;
+      padding: 0; }
+      .search__search-bar::before {
+        content: "";
+        display: table; }
+      .search__search-bar::after {
+        content: "";
+        display: table;
+        clear: both; }
+    .search__boxForm {
+      border-radius: 4px 0 0 4px; }
+    .search__boxCalendar {
+      border-left: 0;
+      border-right: 0; }
+    .search__boxDropDownMenu {
+      border-radius: 0 4px 4px 0; }
+    .search__boxForm, .search__boxCalendar, .search__boxDropDownMenu {
+      display: table-cell;
+      padding: 16px;
+      width: 360px;
+      border: 1px #DBDBDB;
+      border-style: solid; }
+      .search__boxFormLabelText, .search__boxCalendarLabelText, .search__boxDropDownMenuLabelText {
+        font-size: 15px; }
+      .search__boxFormButtonBox, .search__boxCalendarButtonBox, .search__boxDropDownMenuButtonBox {
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        padding-top: 8px; }
+      .search__boxFormButtonText, .search__boxCalendarButtonText, .search__boxDropDownMenuButtonText {
+        color: #767676;
+        width: 100%;
+        border: 0;
+        font-size: 18px; }
+      .search__boxFormButtonSearch, .search__boxCalendarButtonSearch, .search__boxDropDownMenuButtonSearch {
+        line-height: 15px;
+        color: #ffffff;
+        padding: 0 18px;
+        border: 0px;
+        background: #FF5A5F;
+        margin-left: 16px;
+        margin-top: -19px;
+        cursor: pointer;
+        height: 48px;
+        text-align: center;
+        display: inline-block;
+        float: right;
+        border-radius: 4px; }
+        .search__boxFormButtonSearchText, .search__boxCalendarButtonSearchText, .search__boxDropDownMenuButtonSearchText {
+          font-size: 19px; } }
+
+/* End of Min 1025px Screen */
 /*=======================
 
         Submenu
